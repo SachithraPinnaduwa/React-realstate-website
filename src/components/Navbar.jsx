@@ -8,7 +8,7 @@ export default function Navbar() {
     setNav(!nav);
   }
   return (
-    <div className='text-white justify-between flex items-center h-24 max-w-[1240px] px-4 mx-auto'>
+    <div className='text-black font-bold justify-between flex items-center h-24 max-w-[1240px] px-4 mx-auto'>
         <h1 className='w-full text-3xl font-bold text-green-400 m-4' ><PiHouseBold/></h1>
         <ul className=' hidden md:flex'>
         <li className='p-4'><Link to="/">Home</Link></li>
