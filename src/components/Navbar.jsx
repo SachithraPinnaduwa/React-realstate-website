@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 import { PiHouseBold } from "react-icons/pi";
+import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [nav,setNav] = useState(false);
   const handleNav = () =>{
@@ -10,9 +11,9 @@ export default function Navbar() {
     <div className='text-white justify-between flex items-center h-24 max-w-[1240px] px-4 mx-auto'>
         <h1 className='w-full text-3xl font-bold text-green-400 m-4' ><PiHouseBold/></h1>
         <ul className=' hidden md:flex'>
-          <li className='p-4'>HOME</li>
-          <li className='p-4'>COMPANY</li>
-          <li className='p-4'>RESOURCES</li>
+        <li className='p-4'><Link to="/">Home</Link></li>
+          <li className='p-4'><Link to="/search">Search</Link></li>
+          <li className='p-4'><Link to="/favourites">Favourites</Link></li>
           <li className='p-4'>ABOUT</li>
           <li className='p-4'>CONTACT</li>
         </ul>

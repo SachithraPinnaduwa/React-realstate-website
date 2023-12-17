@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card({source ,heading}) {
   return (
-    <div className='shadow-xl bg-gray-200 w-full px-4 pt-16 my-8  hover:scale-105 duration-300'>
+    <div className='  shadow-xl bg-gray-200 w-full px-4 pt-16 my-8  hover:scale-105 duration-300'>
     <img src={source} alt='/' className='w-[300px] mx-auto mt-[-3rem]'/>
     <div className='w-full flex flex-col justify-center items-center '>
         <h1 className='text-2xl font-bold py-2'>{heading}</h1>

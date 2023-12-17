@@ -8,7 +8,7 @@ export default function Searchbar() {
     <p className='text-xl py-4'> Search properties for sale and to rent in the UK
     </p>
     <div className='lg:flex justify-center sm:flex-row'>
-        <div className='sm:w-[80%] sm:mx-auto sm:py-4 lg:py-0 lg:w-[60%] lg:mx-0'>
+        <div className='sm:w-[80%] sm:mx-auto sm:py-4 lg:py-0 lg:w-[100%] lg:mx-0'>
         <input type="text" placeholder='e.g. "York","NW3 5TY" or "Waterloo  Station"' className='bg-gray-200 px-4 py-2 rounded-md w-full'/>
         </div>
         <div className='sm:my-2 lg:my-0'>
