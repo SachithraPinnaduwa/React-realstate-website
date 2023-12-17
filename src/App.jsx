@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div >
+    <div className="bg-[url('./assets/apartmentb.jpg')]  bg-contain ">
    <Navbar/>
    <Maincontent/>
    <Favourites/>
