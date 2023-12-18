@@ -1,36 +1,100 @@
 {
-	"properties": [
-        {
-            "id":"prop1",
-			"type":"House",
-            "bedrooms":3,
-			"price":750000,
-			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
-			"location":"Petts Wood Road, Petts Wood, Orpington",
-			"picture":"images/prop1pic1small.jpg",
-			"url":"properties/prop1.html",
-            "added": {
-                "month":"October",
-                "day":12,
-                "year":2022
-            }
-        },
-		{
-            "id":"prop2",
-			"type":"Flat",
-            "bedrooms":2,
-			"price":399995,
-			"tenure":"Freehold",
-			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
-            "added": {
-                "month":"September",
-                "day":14,
-                "year":2022
-            }
-        }
-]
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "A superb family home, presented in excellent condition and located in the sought-after area of Petts Wood.Opening to a welcoming entrance hallway, the property offers spacious and well laid out accommodation arranged over two floors which has had a single story, side, and rear extension.",
+      "location": "Petts Wood Road, Petts Wood, Orpington",
+      "picture": "images/prop1pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "October",
+        "day": 12,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "description": "A STUNNING NEW BUILD PENTHOUSE APARTMENT BOASTING 1248 SQ. FT OF BEAUTIFULLY APPOINTED ACCOMODATION WITH AN ARRAY OF QUALITY LUXURY FITTINGS. PRIVATE LIFT ACCESS & TWO ALLOCATED PARKING SPACES. IDEALLY LOCATED FOR THE STATION AND TOWN CENTRE.",
+      "location": "Crofton Road Orpington BR6",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "September",
+        "day": 14,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "Detached",
+      "bedrooms": 3,
+      "price": 425000,
+      "tenure": "Freehold",
+      "description": "NO ONWARD CHAIN This spacious three bedroom detached property requires full refurbishment and resides on a generous plot with far reaching views to Bredon Hill and countryside views to the rear. The property is located in the popular village of Defford, Worcestershire.",
+      "location": "Upper Street, Defford, Worcestershire",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "December",
+        "day": 10,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Apartment",
+      "bedrooms": 2,
+      "price": 290000,
+      "tenure": "Share of Freehold",
+      "description": "This stunning 2 bedroom apartment is located on the first floor with Juliette balcony in an open plan Kitchen/Living Room area. This apartment is modern throughout and offers ample storage and sizeable bedrooms. Plus, investors, have no worry about modernising to meet upcoming EPC Regulations for rental properties.",
+      "location": "Potters Wood, Verwood, BH31 7BG",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "October",
+        "day": 3,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "Detached",
+      "bedrooms": 5,
+      "price": 999950,
+      "tenure": "Ask developer",
+      "description": "Southcrest Rise brings an exciting selection of new homes to historic Kenilworth. Perfectly positioned on the eastern edge of the town, close to Kenilworth golf club and offering easy access to the A46. All homes will include electric vehicle charging points and selected plots will feature solar panels.",
+      "location": "Glasshouse Lane, Kenilworth, CV8 2DF",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "October",
+        "day": 26,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Semi-Detached",
+      "bedrooms": 6,
+      "price": 495000,
+      "tenure": "Freehold",
+      "description": "Just Property are delighted to bring to the market an imposing and substantial six bedroom Victorian semi-detached house which is arranged over three floors and is brimming with beautiful period features.",
+      "location": "Belle Hill, Bexhill-on-Sea",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "October",
+        "day": 20,
+        "year": 2023
+      }
+    }
+  ]
 }
