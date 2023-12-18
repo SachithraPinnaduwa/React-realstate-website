@@ -7,20 +7,18 @@ import Navbar from "./Navbar";
 export default function Search() {
   return (
     <div className=" bg-[url('./assets/apartmentb.jpg')]  bg-cover  ">
-         
-      <div className="  w-full  mx-auto text-center flex flex-col  ">
-      
-        <div className="h-20">
-
+      <div className="mx-auto text-center flex flex-col  ">
+        <div className="md:max-w-[800px] mx-auto h-screen">
+          <div className="">
+            <h1 className="text-6xl font-bold text-emerald-500 my-10">
+              Property for sale in &apos;given location&apos;
+            </h1>
+            <div className="m-5  mx-auto  rounded-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)]">
+              <SearchForm />
+            </div>
+          </div>
         </div>
-        <h1 className="text-6xl font-bold text-emerald-500 my-10">
-          Property for sale in &apos;given location&apos;
-        </h1>
-        <div className="py-6  mx-auto justify-center bg-slate-300 rounded-2xl p-4">
-          <SearchForm />
-        </div>
 
-        
         {/* here replace this 1 with the location id you want to search for */}
         <Property />
         <Property />

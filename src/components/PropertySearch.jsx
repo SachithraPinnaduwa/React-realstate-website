@@ -14,11 +14,11 @@ const SearchForm = () => {
   };
 
   return (
-    <div className='max-w-[1240px] mx-auto ml:min-w-[800px]'>
+    <div className='max-w-[1240px] mx-auto lg:min-w-[800px] p-4'>
       <form
         action="#"
         method="get"
-        className="grid grid-cols-1 md:grid-cols-2 rounded-md shadow-md p-4"
+        className="grid grid-cols-1 md:grid-cols-2 rounded-md p-4"
       >
         {/* Date added */}
         <div className="my-5 md:flex items-center">
