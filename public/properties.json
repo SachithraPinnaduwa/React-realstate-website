@@ -95,6 +95,22 @@
         "day": 20,
         "year": 2023
       }
+    },
+    {
+      "id": "prop7",
+      "type": "Land",
+      "bedrooms": 6,
+      "price": 800000,
+      "tenure": "Freehold",
+      "description": "A pair of spacious semi detached houses in addition to a substantial rear yard with detailed planning consent for the creation of 2 detached dormer bungalows.Once the development is complete both properties will enjoy a courtyard gardens. Currently there is off street parking at the front of the property.",
+      "location": "Malton Road, York",
+      "picture": "images/prop2pic1small.jpg",
+      "url": "../src/components/properties/Propertypage.jsx",
+      "added": {
+        "month": "October",
+        "day": 16,
+        "year": 2023
+      }
     }
   ]
 }
