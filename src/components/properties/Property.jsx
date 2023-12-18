@@ -4,12 +4,13 @@ import house from "../../assets/property/house.jpeg";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Property() {
   const { id } = useParams();
   const [pressed, setPressed] = useState(false);
   return (
-    <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row">
+    <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
       <div>
         <img src={house} className="w-70 h-80" alt="house" />
       </div>
@@ -30,12 +31,15 @@ export default function Property() {
         <div>
 
           <div className="flex flex-row float-right mb-10">
-            <button
+          <Link to="/search/1" className="text-3xl font-bold text-emerald-500 ">
+          <button
               type="submit"
               className="flex-none rounded-md bg-teal-500 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 mx-10"
             >
               Visit
             </button>
+         </Link>
+          
             <button
               onClick={() => {
                 setPressed(!pressed);

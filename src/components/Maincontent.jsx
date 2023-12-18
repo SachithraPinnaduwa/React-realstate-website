@@ -6,7 +6,7 @@ export default function Maincontent() {
   return (
     <div className="text-white bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
         
-        <div className=" mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center " >
+        <div className="  w-full h-screen mx-auto text-center flex flex-col justify-center " >
             
            <Searchbar/>
           

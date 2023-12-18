@@ -10,7 +10,7 @@ import {
 import { PiHouseBold } from "react-icons/pi";
 export default function Footer() {
   return (
-    <div className=' py-16 grid lg:grid-cols-3  text-gray-300  bg-gray-800 mx-auto'>
+    <div className=' py-16 grid lg:grid-cols-3  text-gray-300  bg-gray-600 mx-auto'>
         
         <div className='md:pl-20 '>
             <h1 className='w-full text-3xl font-bold text-green-400' ><PiHouseBold/></h1>

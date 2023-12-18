@@ -8,7 +8,7 @@ import Favourites from './components/Favourites'
 import Search from './components/Search'
 import { BrowserRouter as Router,Routes,  Route } from 'react-router-dom'
 import Property from './components/properties/Property'
-
+import Propertypage from './components/properties/Propertypage'
 
 function App() {
 
@@ -17,17 +17,17 @@ function App() {
     <>
    <Router>
     <Navbar/>
-    <div className='h-screen'>
+    
      <Routes>
      <Route path="/" element={<Maincontent/>} />
        <Route path="/search" element={<Search/>} />
-       <Route path="/search/:id" element={<Property/>} />
+       <Route path="/search/:id" element={<Propertypage/>} />
         <Route path="/favourites" element={<Favouritespage/>} />
      </Routes>
   
      
+    
      <Footer/>
-     </div>
      
      </Router>
     </>

@@ -7,12 +7,12 @@ import Card from './Card'
 import Footer from './Footer'
 export default function Favouritespage() {
   return (
-    <div className="text-white bg-[url('./assets/apartmentb.jpg')]  bg-cover min-h-[3000px]">
+    <div className="text-white bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
         
-        <div className=" mt-[-96px] w-full h-screen mx-auto text-center " >
+        <div className="  w-full  mx-auto text-center " >
           
     
-           <div className='w-full  px-4 h-screen '>
+           <div className='w-full  px-4  '>
            <Favourites/>
            </div>
               
