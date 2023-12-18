@@ -4,7 +4,7 @@ import plan from "../../assets/property/plan.png";
 
 export default function Propertypage() {
   return (
-    <div className="max-w-[1240px] grid grid-cols-3 mx-auto">
+    <div className="max-w-[1240px] grid grid-cols-3 mx-auto my-10">
       {/* this is the main content */}
       <div className="col-span-2">
        

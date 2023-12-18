@@ -1,24 +1,15 @@
-import React from 'react'
-import Favourites from './Favourites'
-import Single from '../assets/single.png'
-import Double from '../assets/double.png'
-import Triple from '../assets/triple.png'
-import Card from './Card'
-import Footer from './Footer'
+import React from "react";
+
+import Property from "./properties/Property";
 export default function Favouritespage() {
   return (
-    <div className="text-white bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
-        
-        <div className="  w-full  mx-auto text-center " >
-          
-    
-           <div className='w-full  px-4  '>
-           <Favourites/>
-           </div>
-              
-          
-          
-        </div>
+    <div className=" bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
+      <h1 className="text-6xl font-bold text-center py-8 text-emerald-500">
+        Your Favourites
+      </h1>
+
+      <Property />
+      <Property />
     </div>
-  )
+  );
 }
