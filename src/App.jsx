@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Maincontent from './components/Maincontent'
+import Maincontent from './components/search/Maincontent'
 
 import Favouritespage from './components/Favouritespage'
 

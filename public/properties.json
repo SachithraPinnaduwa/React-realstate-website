@@ -1,5 +1,4 @@
-{
-  "properties": [
+ [
     {
       "id": "prop1",
       "type": "House",
@@ -113,4 +112,4 @@
       }
     }
   ]
-}
+
