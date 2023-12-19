@@ -6,7 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Property() {
+export default function Property({name, location, price}) {
   const { id } = useParams();
   const [pressed, setPressed] = useState(false);
   return (
@@ -16,8 +16,8 @@ export default function Property() {
       </div>
       <div className="mx-10">
         <div className="flex flex-row ml-10 justify-center mt-4">
-          <h1 className="ml-5">Property Name</h1>
-          <h1 className="ml-5">Property Location</h1>
+          <h1 className="ml-5">{name}</h1>
+          <h1 className="ml-5">{location}</h1>
         </div>
 
         <div className="min-h-[120px]">
@@ -32,7 +32,7 @@ export default function Property() {
           </p>
         </div>
 
-        <h1 className="ml-10 mt-5 mb-6">Property Price</h1>
+        <h1 className="ml-10 mt-5 mb-6">{price}</h1>
         <div>
           <div className="flex flex-row float-right mb-10">
             <Link

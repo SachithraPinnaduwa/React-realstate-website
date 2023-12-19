@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchForm = () => {
+const SearchForm = ({properties,fetchData}) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (event) => {
@@ -10,7 +10,8 @@ const SearchForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform your search based on the "searchTerm" state
-    console.log(`Searching for: ${searchTerm}`);
+    
+   
   };
 
   return (
@@ -94,13 +95,18 @@ const SearchForm = () => {
             {/* ... options ... */}
           </select>
         </div>
-      </form>
 
+       
+      </form>
       <div className="text-center mt-6">
-        <button className='bg-[#000300] w-[200px] rounded-md font-medium py-3 text-green-600'>
+        <button className='bg-[#000300] w-[200px] rounded-md font-medium py-3 text-green-600'
+        type="submit"
+        onClick={(properties) => fetchData(properties)}
+        >
           Search
         </button>
       </div>
+      
     </div>
   );
 };

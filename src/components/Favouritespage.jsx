@@ -1,6 +1,7 @@
 import React from "react";
 
 import Property from "./properties/Property";
+import PropertyList from "./properties/PropertyList";
 export default function Favouritespage() {
   return (
     <div className=" bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
@@ -8,8 +9,6 @@ export default function Favouritespage() {
         Your Favourites
       </h1>
 
-      <Property />
-      <Property />
     </div>
   );
 }
