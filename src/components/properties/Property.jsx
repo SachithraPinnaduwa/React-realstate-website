@@ -6,29 +6,23 @@ import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Property({name, location, price}) {
-  const { id } = useParams();
+export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added}) {
+  
   const [pressed, setPressed] = useState(false);
   return (
     <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
       <div className="mx-auto my-auto ">
-        <img src={house} className="w-[600px]" alt="house" />
+        <img src={picture.small} className="w-[600px]" alt="house" />
       </div>
       <div className="mx-10">
         <div className="flex flex-row ml-10 justify-center mt-4">
-          <h1 className="ml-5">{name}</h1>
-          <h1 className="ml-5">{location}</h1>
+          <h1 className="ml-5">{type ?  type: "No type"}</h1>
+          <h1 className="ml-5">{location ? location: "No location" }</h1>
         </div>
 
         <div className="min-h-[120px]">
           <p className=" mt-5">
-            Just Property are delighted to bring to the market an imposing and
-            substantial six bedroom Victorian semi-detached house which is
-            arranged over three floors and is brimming with beautiful period
-            features. The property enjoys a stunning position in the heart of
-            Bexhill’s picturesque Old Town and whilst the house does require
-            updating there is huge potential for any new owner to create a
-            magnificent home to suit their needs.
+          {description ? description: "No description" }
           </p>
         </div>
 
@@ -36,7 +30,7 @@ export default function Property({name, location, price}) {
         <div>
           <div className="flex flex-row float-right mb-10">
             <Link
-              to="/search/1"
+              to={`/search/${id}`}
               className="text-3xl font-bold text-emerald-500 "
             >
               <button

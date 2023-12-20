@@ -7,7 +7,10 @@
       "tenure": "Freehold",
       "description": "A superb family home, presented in excellent condition and located in the sought-after area of Petts Wood.Opening to a welcoming entrance hallway, the property offers spacious and well laid out accommodation arranged over two floors which has had a single story, side, and rear extension.",
       "location": "Petts Wood Road, Petts Wood, Orpington",
-      "picture": "images/prop1pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop1/house.jpeg",
+        "medium":"../src/assets/property/prop1/house2.jpeg",
+        "plan":"../src/assets/property/prop1/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "October",
@@ -23,7 +26,10 @@
       "tenure": "Freehold",
       "description": "A STUNNING NEW BUILD PENTHOUSE APARTMENT BOASTING 1248 SQ. FT OF BEAUTIFULLY APPOINTED ACCOMODATION WITH AN ARRAY OF QUALITY LUXURY FITTINGS. PRIVATE LIFT ACCESS & TWO ALLOCATED PARKING SPACES. IDEALLY LOCATED FOR THE STATION AND TOWN CENTRE.",
       "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop2/flat.jpeg",
+        "medium":"../src/assets/property/prop2/flat2.jpeg",
+        "plan":"../src/assets/property/prop2/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "September",
@@ -39,7 +45,10 @@
       "tenure": "Freehold",
       "description": "NO ONWARD CHAIN This spacious three bedroom detached property requires full refurbishment and resides on a generous plot with far reaching views to Bredon Hill and countryside views to the rear. The property is located in the popular village of Defford, Worcestershire.",
       "location": "Upper Street, Defford, Worcestershire",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop3/detached.jpeg",
+        "medium":"../src/assets/property/prop3/detached2.jpeg",
+        "plan":"../src/assets/property/prop3/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "December",
@@ -55,7 +64,10 @@
       "tenure": "Share of Freehold",
       "description": "This stunning 2 bedroom apartment is located on the first floor with Juliette balcony in an open plan Kitchen/Living Room area. This apartment is modern throughout and offers ample storage and sizeable bedrooms. Plus, investors, have no worry about modernising to meet upcoming EPC Regulations for rental properties.",
       "location": "Potters Wood, Verwood, BH31 7BG",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop4/apartment.jpeg",
+        "medium":"../src/assets/property/prop4/apartment2.jpeg",
+        "plan":"../src/assets/property/prop4/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "October",
@@ -71,7 +83,10 @@
       "tenure": "Ask developer",
       "description": "Southcrest Rise brings an exciting selection of new homes to historic Kenilworth. Perfectly positioned on the eastern edge of the town, close to Kenilworth golf club and offering easy access to the A46. All homes will include electric vehicle charging points and selected plots will feature solar panels.",
       "location": "Glasshouse Lane, Kenilworth, CV8 2DF",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop5/house.jpeg",
+        "medium":"../src/assets/property/prop5/house2.jpeg",
+        "plan":"../src/assets/property/prop5/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "October",
@@ -87,7 +102,10 @@
       "tenure": "Freehold",
       "description": "Just Property are delighted to bring to the market an imposing and substantial six bedroom Victorian semi-detached house which is arranged over three floors and is brimming with beautiful period features.",
       "location": "Belle Hill, Bexhill-on-Sea",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop6/house.jpeg",
+        "medium":"../src/assets/property/prop6/house2.jpeg",
+        "plan":"../src/assets/property/prop6/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "October",
@@ -103,7 +121,10 @@
       "tenure": "Freehold",
       "description": "A pair of spacious semi detached houses in addition to a substantial rear yard with detailed planning consent for the creation of 2 detached dormer bungalows.Once the development is complete both properties will enjoy a courtyard gardens. Currently there is off street parking at the front of the property.",
       "location": "Malton Road, York",
-      "picture": "images/prop2pic1small.jpg",
+      "picture":{ 
+        "small":"../src/assets/property/prop7/land.jpeg",
+        "medium":"../src/assets/property/prop7/land2.jpeg",
+        "plan":"../src/assets/property/prop7/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
       "added": {
         "month": "October",

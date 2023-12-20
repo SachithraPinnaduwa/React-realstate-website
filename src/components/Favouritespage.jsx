@@ -5,7 +5,7 @@ import PropertyList from "./properties/PropertyList";
 export default function Favouritespage() {
   return (
     <div className=" bg-[url('./assets/apartmentb.jpg')]  bg-cover ">
-      <h1 className="text-6xl font-bold text-center py-8 text-emerald-500">
+      <h1 className="text-6xl font-bold text-center py-8 text-emerald-500 min-h-screen">
         Your Favourites
       </h1>
 
