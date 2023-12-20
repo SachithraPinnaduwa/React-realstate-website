@@ -6,7 +6,6 @@ export default function SearchResult({result,selected,setSelected ,handleSelect 
         setSelected(result);
       
       };
-
      
       
   return (
