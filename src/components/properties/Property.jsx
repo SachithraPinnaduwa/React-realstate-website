@@ -10,8 +10,8 @@ export default function Property({name, location, price}) {
   const { id } = useParams();
   const [pressed, setPressed] = useState(false);
   return (
-    <div className="grid lg:grid-flow-col border-8 border-teal-500 md:grid-flow-row bg-slate-100 m-5 rounded-xl">
-      <div className="mx-auto my-auto ml-5">
+    <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
+      <div className="mx-auto my-auto ">
         <img src={house} className="w-[600px]" alt="house" />
       </div>
       <div className="mx-10">
