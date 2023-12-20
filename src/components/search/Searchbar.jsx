@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import SearchResultsList from "./SearchResultsList";
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,7 @@ export default function Searchbar({ setResults, results }) {
   const [selected,setSelected] = useState("")
   const [handle,handleSelect] = useState(false)
 
+  
   const fetchData = (value) => {
     fetch("../../public/properties.json")
       .then((response) => response.json())
@@ -22,10 +23,19 @@ export default function Searchbar({ setResults, results }) {
       });
   };
 
+
   const handleChange = (value) => {
     setInput(value);
     fetchData(value);
+    if (handle) {
+      
+      handleSelect(false);
+    }
   };
+
+ 
+
+  
 
   
 
@@ -42,6 +52,7 @@ export default function Searchbar({ setResults, results }) {
       <div className="flex justify-center ">
         <div className="sm:w-[80%] sm:mx-auto sm:py-4 lg:py-0 lg:w-[100%] lg:mx-0">
           <input
+          
             type="search"
             placeholder='e.g. "York","NW3 5TY" or "Waterloo  Station"'
            
