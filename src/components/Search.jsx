@@ -9,6 +9,8 @@ export default function Search() {
 
   const [properties, setProperties] = useState([]);
   const [favouriteProperties, setFavouriteProperties] = useState([]);
+  const [ids, setIds] = useState({});
+  const [pressedOnly, setPressedOnly] = useState(false);
    
   const fetchData = (value) => {
       fetch("../../public/properties.json")
@@ -25,9 +27,18 @@ export default function Search() {
         prop.id === propertyId ? { ...prop, pressed: !prop.pressed } : prop
       )
     );
-    console.log(propertyId)
+    setIds((prevIds) => ({ ...prevIds, [propertyId]: !prevIds[propertyId] }));
+
   };
  
+  console.log(ids);
+  const filteredProperties = properties.filter((prop) => {
+    if (pressedOnly) {
+      return ids[prop.id];
+    } else {
+      return true;
+    }
+  });
 
 
   return (
@@ -42,11 +53,14 @@ export default function Search() {
               <SearchForm properties={properties} fetchData={fetchData}/>
               
             </div>
+            <button onClick={() => setPressedOnly(!pressedOnly)} className="bg-[#000300] w-[200px] rounded-md font-medium py-3 text-green-600">
+              Show Favourites
+            </button>
           </div>
         </div>
 
         {/* here replace this 1 with the location id you want to search for */}
-   <PropertyList properties={properties} setProperties={setProperties} handlePressChange={handlePressChange} />
+   <PropertyList properties={filteredProperties} setProperties={setProperties} handlePressChange={handlePressChange} />
       </div>
     </div>
   );

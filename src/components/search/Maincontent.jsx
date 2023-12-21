@@ -10,6 +10,7 @@ export default function Maincontent() {
   const [properties, setProperties] = useState([]);
   const  [property,setProperty] = useState([])
   const [favouriteProperties, setFavouriteProperties] = useState([]);
+  
 
    
   const fetchDat = (value) => {
