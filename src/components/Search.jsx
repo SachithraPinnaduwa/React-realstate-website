@@ -8,7 +8,7 @@ import PropertyList from "./properties/PropertyList";
 export default function Search() {
 
   const [properties, setProperties] = useState([]);
-  
+  const [favouriteProperties, setFavouriteProperties] = useState([]);
    
   const fetchData = (value) => {
       fetch("../../public/properties.json")
@@ -17,6 +17,17 @@ export default function Search() {
           setProperties(json);
         });
   };
+
+  const handlePressChange = (propertyId) => {
+    // Toggle the pressed state for the property with the given ID
+    setFavouriteProperties((prevProperties) =>
+      prevProperties.map((prop) =>
+        prop.id === propertyId ? { ...prop, pressed: !prop.pressed } : prop
+      )
+    );
+    console.log(propertyId)
+  };
+ 
 
 
   return (
@@ -35,7 +46,7 @@ export default function Search() {
         </div>
 
         {/* here replace this 1 with the location id you want to search for */}
-   <PropertyList properties={properties} setProperties={setProperties} />
+   <PropertyList properties={properties} setProperties={setProperties} handlePressChange={handlePressChange} />
       </div>
     </div>
   );

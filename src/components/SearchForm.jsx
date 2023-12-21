@@ -24,13 +24,13 @@ const SearchForm = ({properties,fetchData}) => {
         {/* Date added */}
         <div className="my-5 md:flex items-center">
           <label className="block text-sm font-medium text-black md:mr-20">Date added</label>
-          <select
+          <input type='date'
             id="date-added"
             name="date added"
             className="w-[50%]  rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2 md:mt-0 md:ml-2"
-          >
-            {/* ... options ... */}
-          </select>
+          />
+       
+          
         </div>
 
         {/* Property type */}
@@ -39,9 +39,13 @@ const SearchForm = ({properties,fetchData}) => {
           <select
             id="property-type"
             name="property-type"
+            placeholder="Property type"
             className="w-[50%] rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2 md:mt-0 md:ml-2"
           >
-            {/* ... options ... */}
+            <option disabled selected value="any">Select property type</option>
+           <option value="house">House</option>
+            <option value="flat">Flat</option>
+            <option value="any">Any</option>
           </select>
         </div>
 
@@ -67,7 +71,7 @@ const SearchForm = ({properties,fetchData}) => {
               type="number"
               id="price-min"
               name="price-min"
-                placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min'
+                placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min'
               className="w-full rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2"
             />
           </div>
@@ -77,7 +81,7 @@ const SearchForm = ({properties,fetchData}) => {
               type="number"
               id="price-max"
               name="price-max"
-              placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max'
+              placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max'
               className="w-full rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2"
             />
           </div>
@@ -88,12 +92,28 @@ const SearchForm = ({properties,fetchData}) => {
         {/* Number of bedrooms */}
         <div className="my-5 md:flex items-center">
           <label className="block text-sm font-medium text-black mr-3">Number of bedrooms</label>
-          <select
-            name="bedrooms"
-            className="w-[50%] rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2 md:mt-0 md:ml-2"
-          >
-            {/* ... options ... */}
-          </select>
+          
+
+          <div className=" items-center mt-2 md:mt-0 md:ml-2">
+            
+            <input
+              type="number"
+              id="price-min"
+              name="price-min"
+                placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min'
+              className="w-full rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2"
+            />
+          </div>
+          <div className=" items-center mt-2 md:mt-0 md:ml-2">
+       
+            <input
+              type="number"
+              id="price-max"
+              name="price-max"
+              placeholder='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max'
+              className="w-full rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2"
+            />
+          </div>
         </div>
 
        

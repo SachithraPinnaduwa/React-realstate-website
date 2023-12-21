@@ -8,7 +8,9 @@ export default function Maincontent() {
   const [results,setResults] = useState([])
   const [childValue, setChildValue] = useState("");
   const [properties, setProperties] = useState([]);
-  
+  const  [property,setProperty] = useState([])
+  const [favouriteProperties, setFavouriteProperties] = useState([]);
+
    
   const fetchDat = (value) => {
       fetch("../../public/properties.json")
@@ -21,6 +23,17 @@ export default function Maincontent() {
   const handleChildValue = (value) => {
     setChildValue(value);
   };
+  const handlePressChange = (propertyId) => {
+    // Toggle the pressed state for the property with the given ID
+    setFavouriteProperties((prevProperties) =>
+      prevProperties.map((prop) =>
+        prop.id === propertyId ? { ...prop, pressed: !prop.pressed } : prop
+      )
+    );
+    console.log(propertyId)
+  };
+
+ 
   
 
   return (
@@ -33,8 +46,27 @@ export default function Maincontent() {
            />
           
         </div>
+
+        {properties
+          .filter((property) => {
+            return (
+              !childValue ||
+              (property &&
+                property.location &&
+                property.location.toLowerCase().includes(childValue.toLowerCase()))
+            );
+          })
+          .map((filteredProperty) => (
+            <PropertyList
+              key={filteredProperty.id}
+              properties={[filteredProperty]}
+              childValue={childValue}
+              handlePressChange={handlePressChange} 
+            />
+          ))}
+      
         
-        <PropertyList    properties={properties} childValue={childValue}/>
+        
     </div>
   )
 }

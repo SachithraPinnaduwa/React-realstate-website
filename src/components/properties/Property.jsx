@@ -6,9 +6,15 @@ import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added}) {
+export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added,handlePressChange}) {
   
   const [pressed, setPressed] = useState(false);
+  const handlePress = () => {
+    setPressed(!pressed);
+    // Call the handlePressChange function from the parent component
+    handlePressChange(id);
+  };
+  
   return (
     <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
       <div className="mx-auto my-auto ">
@@ -42,9 +48,7 @@ export default function Property({id,type,bedrooms,price,tenure,description,loca
             </Link>
 
             <button
-              onClick={() => {
-                setPressed(!pressed);
-              }}
+              onClick={handlePress}
             >
               {!pressed ? (
                 <CiHeart
