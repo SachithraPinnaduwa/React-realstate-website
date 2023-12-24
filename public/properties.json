@@ -12,6 +12,7 @@
         "medium":"../src/assets/property/prop1/house2.jpeg",
         "plan":"../src/assets/property/prop1/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+      "date": "2022-10-12T00:00:00.000Z",
       "added": {
         "month": "October",
         "day": 12,
@@ -31,6 +32,7 @@
         "medium":"../src/assets/property/prop2/flat2.jpeg",
         "plan":"../src/assets/property/prop2/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+      "date": "2022-09-14T00:00:00.000Z",
       "added": {
         "month": "September",
         "day": 14,
@@ -50,6 +52,7 @@
         "medium":"../src/assets/property/prop3/detached2.jpeg",
         "plan":"../src/assets/property/prop3/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+      "date": "2023-12-10T00:00:00.000Z",
       "added": {
         "month": "December",
         "day": 10,
@@ -69,6 +72,7 @@
         "medium":"../src/assets/property/prop4/apartment2.jpeg",
         "plan":"../src/assets/property/prop4/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+      "date": "2022-10-03T00:00:00.000Z",
       "added": {
         "month": "October",
         "day": 3,
@@ -88,6 +92,7 @@
         "medium":"../src/assets/property/prop5/house2.jpeg",
         "plan":"../src/assets/property/prop5/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+        "date": "2023-10-26T00:00:00.000Z",
       "added": {
         "month": "October",
         "day": 26,
@@ -107,6 +112,7 @@
         "medium":"../src/assets/property/prop6/house2.jpeg",
         "plan":"../src/assets/property/prop6/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+        "date": "2023-10-20T00:00:00.000Z",
       "added": {
         "month": "October",
         "day": 20,
@@ -126,6 +132,7 @@
         "medium":"../src/assets/property/prop7/land2.jpeg",
         "plan":"../src/assets/property/prop7/plan.jpeg"},
       "url": "../src/components/properties/Propertypage.jsx",
+        "date": "2023-10-16T00:00:00.000Z",
       "added": {
         "month": "October",
         "day": 16,

@@ -21,7 +21,21 @@ function App() {
     const [property, setProperty] = useState([]);
     const [ids, setIds] = useState({});
 
+const  [formData, setFormData] = useState(
+    {
+        propertytype: "any",
 
+        date: new Date(),
+        bedrooms:{
+            bedroomsmin: 0,
+            bedroomsmax: 0,
+        } ,
+        price: {
+            pricemin: 0,
+            pricemax: 0,
+        }
+    }
+);
 
 
     const fetchDat = () => {
@@ -102,6 +116,7 @@ function App() {
          favouriteProperties={favouriteProperties} setFavouriteProperties={setFavouriteProperties}
        ids={ids} setIds={setIds}
        childValue={childValue}
+       formData={formData} setFormData={setFormData}
        />} />
 
        <Route path="/search/:id" element={<Propertypage/>} />

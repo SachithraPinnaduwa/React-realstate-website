@@ -10,7 +10,7 @@ export default function Favouritespage({property,setProperty,ids,setIds,handlePr
   return (
     <div className="bg-[url('./assets/apartmentb.jpg')] bg-cover min-h-screen">
       <h1 className="text-6xl font-bold text-center py-8 text-emerald-500 ">
-        Your Favourites
+        Your Favourites {filteredProperties.length===0 ? "are empty" : ""}
       </h1>
 
 
