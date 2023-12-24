@@ -1,49 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Property from "./properties/Property";
+
 import PropertyList from "./properties/PropertyList";
 
-export default function Favouritespage() {
-  const [property, setProperty] = useState([]);
-  const [pressedOnly, setPressedOnly] = useState(false);
-  const [favouriteProperties, setFavouriteProperties] = useState([]);
-  const [ids, setIds] = useState({});
+export default function Favouritespage({property,setProperty,ids,setIds,handlePressChangeFavourites,
+                                           favouriteProperties,setFavouriteProperties,filteredProperties}) {
 
-  useEffect(() => {
-    // Fetch property data based on the ID
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`../../public/properties.json`);
-        const data = await response.json();
-
-        setProperty(data);
-      } catch (error) {
-        console.error("Error fetching property data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const handlePressChange = (propertyId) => {
-    // Toggle the pressed state for the property with the given ID
-    setFavouriteProperties((prevProperties) =>
-      prevProperties.map((prop) =>
-        prop.id === propertyId ? { ...prop, pressed: !prop.pressed } : prop
-      )
-    );
- setIds((prevIds) => ({ ...prevIds, [propertyId]: !prevIds[propertyId] }));
-    
-  
-  };
-
-  console.log(ids);
-  const filteredProperties = property.filter((prop) => {
-    if (pressedOnly) {
-      return ids[prop.id];
-    } else {
-      return true;
-    }
-  });
 
 
   return (
@@ -52,11 +13,9 @@ export default function Favouritespage() {
         Your Favourites
       </h1>
 
-      <button onClick={() => setPressedOnly(!pressedOnly)}>
-        Toggle Pressed Only
-      </button>
 
-      <PropertyList properties={filteredProperties} handlePressChange={handlePressChange} />
+
+      <PropertyList properties={filteredProperties} handlePressChangeFavourites={handlePressChangeFavourites} />
     </div>
   );
 }

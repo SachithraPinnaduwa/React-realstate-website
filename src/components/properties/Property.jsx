@@ -6,13 +6,13 @@ import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added,handlePressChange}) {
+export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added,handlePressChangeFavourites}) {
   
   const [pressed, setPressed] = useState(false);
   const handlePress = () => {
     setPressed(!pressed);
     // Call the handlePressChange function from the parent component
-    handlePressChange(id);
+    handlePressChangeFavourites(id);
   };
   
   return (

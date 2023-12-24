@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchForm = ({properties,fetchData}) => {
+const SearchForm = ({properties,fetchDat}) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (event) => {
@@ -121,7 +121,7 @@ const SearchForm = ({properties,fetchData}) => {
       <div className="text-center mt-6">
         <button className='bg-[#000300] w-[200px] rounded-md font-medium py-3 text-green-600'
         type="submit"
-        onClick={(properties) => fetchData(properties)}
+        onClick={() => fetchDat()}
         >
           Search
         </button>

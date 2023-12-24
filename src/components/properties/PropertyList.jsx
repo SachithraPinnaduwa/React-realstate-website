@@ -1,7 +1,7 @@
 import React from 'react';
 import Property from './Property';
 
-export default function PropertyList({ properties, childValue = "" , handlePressChange}) {
+export default function PropertyList({ properties, handlePressChangeFavourites}) {
   return (
     <div className="text-black">
       {properties
@@ -9,7 +9,7 @@ export default function PropertyList({ properties, childValue = "" , handlePress
           <Property
             key={property.id}
             {...property}
-            handlePressChange={handlePressChange}
+            handlePressChangeFavourites={handlePressChangeFavourites}
           />
         ))}
     </div>

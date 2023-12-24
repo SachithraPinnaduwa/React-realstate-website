@@ -3,7 +3,7 @@ import SearchResultsList from "./SearchResultsList";
 import { Link } from "react-router-dom";
 import PropertyList from "../properties/PropertyList";
 
-export default function Searchbar({ setResults, results,fetchDat,properties,setProperties,handleChildValue }) {
+export default function Searchbar({ setResults, results,fetchDat,properties,setProperties,handleChildValue,childValue }) {
   const [input, setInput] = useState("");
   const [selected,setSelected] = useState("")
   const [handle,handleSelect] = useState(false)
@@ -39,8 +39,12 @@ export default function Searchbar({ setResults, results,fetchDat,properties,setP
   };
   const handleButtonClick = () => {
     const searchTerm = handle ? selected.location : input;
+
     handleChildValue(searchTerm)
+      if (searchTerm !== "") {
+
     fetchDat();
+    }
   }
 
 
@@ -68,7 +72,7 @@ export default function Searchbar({ setResults, results,fetchDat,properties,setP
             }}
             className="bg-gray-200 px-4 py-2 rounded-md w-full text-black"
           />
-          <SearchResultsList className="" results={results}  selected={selected} setSelected={setSelected}  handleSelect={handleSelect} handle={handle}  handleChildValue={handleChildValue}/>
+          <SearchResultsList className="" results={results}  selected={selected} setSelected={setSelected}  handleSelect={handleSelect} handle={handle}  />
         </div>
         <div className="sm:my-2 lg:my-0">
           {/* <Link to="/search"> */}
