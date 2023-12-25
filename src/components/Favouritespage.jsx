@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import PropertyList from "./properties/PropertyList";
 
 export default function Favouritespage({property,setProperty,ids,setIds,handlePressChangeFavourites,
-                                           favouriteProperties,setFavouriteProperties,filteredProperties}) {
+                   pressed,setPressed,favouriteProperties,setFavouriteProperties,filteredProperties}) {
 
 
 
@@ -15,7 +15,9 @@ export default function Favouritespage({property,setProperty,ids,setIds,handlePr
 
 
 
-      <PropertyList properties={filteredProperties} handlePressChangeFavourites={handlePressChangeFavourites} />
+      <PropertyList properties={filteredProperties} handlePressChangeFavourites={handlePressChangeFavourites}
+      pressed={pressed} setPressed={setPressed}
+      />
     </div>
   );
 }

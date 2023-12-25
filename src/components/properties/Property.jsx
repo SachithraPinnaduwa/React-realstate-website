@@ -1,18 +1,21 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import house from "../../assets/property/house.jpeg";
+
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added,handlePressChangeFavourites}) {
-  
-  const [pressed, setPressed] = useState(false);
+export default function Property({id,type,bedrooms,price,tenure,description,location,picture,url,added,handlePressChangeFavourites,
+pressed,setPressed,ids,setIds
+}) {
+
+
   const handlePress = () => {
     setPressed(!pressed);
     // Call the handlePressChange function from the parent component
     handlePressChangeFavourites(id);
+
   };
   
   return (

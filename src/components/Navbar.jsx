@@ -20,7 +20,7 @@ export default function Navbar() {
         
         </div>
         <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-gray-600 ease-in-out duration-500 md:hidden' : "fixed left-[-100%] h-full md:hidden"}>
-        <h1 className='w-full text-3xl font-bold text-green-400 m-5 pt-4' >REACT.</h1>
+        <h1 className='w-full text-3xl font-bold text-green-400 m-5 pt-4' >RightMove</h1>
           <ul className='pt-2  '>
           <li className='p-4'><Link to="/">Home</Link></li>
           <li className='p-4'><Link to="/search">Search</Link></li>

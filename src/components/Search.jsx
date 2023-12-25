@@ -6,7 +6,8 @@ import PropertyList from "./properties/PropertyList";
 export default function Search({fetchDat,handlePressChangeFavourites,filteredProperties,setProperty,
                                    properties,setProperties,favouriteProperties
                                     ,setFavouriteProperties,ids,setIds,childValue,
-                                    formData,setFormData}) {
+                                    formData,setFormData,pressed,setPressed
+                                }) {
 
  const  p = properties.filter((property) => {
     return (
@@ -63,7 +64,9 @@ export default function Search({fetchDat,handlePressChangeFavourites,filteredPro
 
         {/* here replace this 1 with the location id you want to search for */}
    <PropertyList properties={filtered}
-     setProperties={setProperties} handlePressChangeFavourites={handlePressChangeFavourites} />
+     setProperties={setProperties} handlePressChangeFavourites={handlePressChangeFavourites}
+    pressed={pressed} setPressed={setPressed} ids={ids} setIds={setIds}
+   />
       </div>
     </div>
   );

@@ -20,6 +20,7 @@ function App() {
 
     const [property, setProperty] = useState([]);
     const [ids, setIds] = useState({});
+    const [pressed, setPressed] = useState(false);
 
 const  [formData, setFormData] = useState(
     {
@@ -107,6 +108,8 @@ const  [formData, setFormData] = useState(
      childValue={childValue} favouriteProperties={favouriteProperties}
      setFavouriteProperties={setFavouriteProperties}
         fetchDat={fetchDat}
+     pressed={pressed} setPressed={setPressed}
+     ids={ids} setIds={setIds}
        
      />} />
        <Route path="/search" element={<Search
@@ -117,9 +120,13 @@ const  [formData, setFormData] = useState(
        ids={ids} setIds={setIds}
        childValue={childValue}
        formData={formData} setFormData={setFormData}
+       pressed={pressed} setPressed={setPressed}
        />} />
 
-       <Route path="/search/:id" element={<Propertypage/>} />
+       <Route path="/search/:id" element={<Propertypage
+           handlePressChangeFavourites={handlePressChangeFavourites}
+           pressed={pressed} setPressed={setPressed}
+       />} />
 
         <Route path="/favourites" element={<Favouritespage
         property={property} setProperty={setProperty}
@@ -127,7 +134,7 @@ const  [formData, setFormData] = useState(
         ids={ids} setIds={setIds} filteredProperties={filteredProperties}
         handlePressChangeFavourites={handlePressChangeFavourites}
         favouriteProperties={favouriteProperties} setFavouriteProperties={setFavouriteProperties}
-
+        pressed={pressed} setPressed={setPressed}
         />} />
      </Routes>
   

@@ -4,7 +4,8 @@ import Searchbar from './Searchbar'
 import PropertyList from '../properties/PropertyList';
 export default function Maincontent({results,setResults,fetchDat,handleChildValue,
   properties,setProperties,handlePressChangeFavourites,
-  childValue,favouriteProperties,setFavouriteProperties}) {
+  childValue,favouriteProperties,setFavouriteProperties,pressed,setPressed,ids,setIds
+}) {
 
   const  p = properties.filter((property) => {
     return (
@@ -35,6 +36,8 @@ export default function Maincontent({results,setResults,fetchDat,handleChildValu
               properties={[filteredProperty]}
               childValue={childValue}
               handlePressChangeFavourites={handlePressChangeFavourites}
+                pressed={pressed} setPressed={setPressed}
+              ids={ids} setIds={setIds}
             />
           ))}
 
