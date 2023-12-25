@@ -64,7 +64,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
         {/* Date added */}
         <div className="my-5 md:flex items-center">
           <label
-              className="block text-sm font-medium text-black "
+              className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl"
               htmlFor="date">Date added</label>
           <input type="date" id="date"
                  className="w-[50%]  rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2 md:mt-0 md:ml-2"
@@ -81,7 +81,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
 
         {/* Property type */}
         <div className="my-5 md:flex items-center">
-          <label htmlFor="propertytype" className="block text-sm font-medium text-black">Property type</label>
+          <label htmlFor="propertytype" className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl">Property type</label>
           <select
               id="propertytype"
               name="propertytype"
@@ -109,7 +109,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
         {/* Price range */}
         <div className="my-5 md:flex items-center md:flex-row">
           <label
-              className="block text-sm font-medium text-black "
+              className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl"
               >Price</label>
           <div>
           <div className=" items-center mt-2 md:mt-0 md:ml-2">
@@ -154,7 +154,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
         {/* Number of bedrooms */}
         <div className="my-5 md:flex items-center md:flex-row">
           <label
-              className="block text-sm font-medium text-black "
+              className="block text-xl font-medium text-black md:mr-auto md:ml-6"
           >Bedrooms</label>
       <div>
           <div className=" items-center mt-2 md:mt-0 md:ml-2 ">
@@ -181,7 +181,9 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
           </div>
       </div>
         </div>
-        <div className="text-center mt-6">
+
+        <div></div>
+        <div className=" ml-auto mt-6 ">
           <button className='bg-[#000300] w-[200px] rounded-md font-medium py-3 text-green-600'
 
           >

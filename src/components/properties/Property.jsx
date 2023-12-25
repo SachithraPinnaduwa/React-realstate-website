@@ -21,7 +21,7 @@ pressed,setPressed,ids,setIds
   return (
     <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
       <div className="mx-auto my-auto ">
-        <img src={picture.small} className="w-[600px]" alt="house" />
+        <img src={picture[0]} className="w-[600px]" alt="house" />
       </div>
       <div className="mx-10">
         <div className="flex flex-row ml-10 justify-center mt-4">

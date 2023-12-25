@@ -2,12 +2,49 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function Propertypage({ handlePressChangeFavourites,pressed,setPressed }) {
   const { id } = useParams();
   const [property, setProperty] = useState("");
 
   const [activeTab, setActiveTab] = useState(1);
+  const  images = [
+    {
+      url: "src/assets/apartment.jpg"
+    },
+    {
+      url: "../src/assets/property/prop1/house2.jpeg"
+    },
+    {
+      url: "../src/assets/property/prop1/house3.jpeg"
+    },
+    {
+      url: "../src/assets/property/prop1/house4.jpeg"
+    },
+    {
+      url: "../src/assets/property/prop1/house5.jpeg"
+    },
+    {
+      url: "../src/assets/property/prop1/house6.jpeg"
+    },
+    {
+      url: "../src/assets/property/prop1/house7.jpeg"
+    },];
+
+  const  [currentImage, setCurrentImage] = useState(0)
+  const prevImage = () => {
+    const  isFirstImage = currentImage === 0
+    const newIndex = isFirstImage ? images.length - 1 : currentImage - 1
+    setCurrentImage(newIndex)
+  }
+  const  nextImage = () => {
+    const isLastImage = currentImage === images.length - 1
+    const newIndex = isLastImage ? 0 : currentImage + 1
+    setCurrentImage(newIndex)
+  }
+
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
@@ -38,8 +75,22 @@ console.log(id? id: "No identity")
     <div className="max-w-[1240px]  mx-auto my-10 sm:justify-center">
       {property && (
           <div>
-            {property.picture && property.picture.small ? (
-                <img src={property.picture.medium} alt="Property" className="w-[820px] mx-auto"/>
+            {property.picture  ? (
+                <div className="max-w-[1000px] h-[600px] w-full m-auto  px-4 relative">
+                  <div style={{backgroundImage: `url(${property.picture[currentImage]})`}}
+                       className="w-full h-full rounded-3xl bg-center bg-cover duration-500">
+
+                  </div>
+
+                  <div
+                      className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                    <FaChevronLeft size={30} onClick={prevImage}/>
+                  </div>
+                  <div
+                      className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                    <FaChevronRight size={30} onClick={nextImage}/>
+                  </div>
+                </div>
             ) : (
                 <p>No picture</p>
             )}
@@ -55,12 +106,11 @@ console.log(id? id: "No identity")
               </div>
 
 
-
               <div className="mt-5 mr-10 grid grid-flow-row">
                 <div>
                   <button
                       onClick={() => {
-                      buttonClickAction();
+                        buttonClickAction();
                       }}
                       className="float-right"
                   >
@@ -177,8 +227,8 @@ console.log(id? id: "No identity")
                   >
 
                     <div className="lg:visible   sm:block ">
-                      {property.picture && property.picture.plan ? (
-                          <img src={property.picture.plan} alt="Property Plan" className="w-[410px] mx-auto"/>
+                      {property.picture  ? (
+                          <img src={property.picture[7]} alt="Property Plan" className="w-[410px] mx-auto"/>
                       ) : (
                           <p>No picture</p>
                       )}
