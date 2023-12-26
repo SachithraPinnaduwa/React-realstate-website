@@ -64,7 +64,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
         {/* Date added */}
         <div className="my-5 md:flex items-center">
           <label
-              className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl"
+              className="block  font-medium text-black md:mr-auto md:ml-6 text-xl"
               htmlFor="date">Date added</label>
           <input type="date" id="date"
                  className="w-[50%]  rounded-md border border-gray-600 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 h-10 mt-2 md:mt-0 md:ml-2"
@@ -81,7 +81,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
 
         {/* Property type */}
         <div className="my-5 md:flex items-center">
-          <label htmlFor="propertytype" className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl">Property type</label>
+          <label htmlFor="propertytype" className="block  font-medium text-black md:mr-auto md:ml-6 text-xl">Property type</label>
           <select
               id="propertytype"
               name="propertytype"
@@ -109,7 +109,7 @@ const SearchForm = ({properties,fetchDat,formData,setFormData}) => {
         {/* Price range */}
         <div className="my-5 md:flex items-center md:flex-row">
           <label
-              className="block text-sm font-medium text-black md:mr-auto md:ml-6 text-xl"
+              className="block  font-medium text-black md:mr-auto md:ml-6 text-xl"
               >Price</label>
           <div>
           <div className=" items-center mt-2 md:mt-0 md:ml-2">
