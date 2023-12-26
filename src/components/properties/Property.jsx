@@ -21,7 +21,7 @@ pressed,setPressed,ids,setIds
   return (
     <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
       <div className="mx-auto my-auto ">
-        <img src={picture[0]} className="w-[600px]" alt="house" />
+        <img src={picture[0]} className="w-full h-full " alt="house" />
       </div>
       <div className="mx-10">
         <div className="flex flex-row ml-10 justify-center mt-4">
@@ -29,7 +29,7 @@ pressed,setPressed,ids,setIds
           <h1 className="ml-5">{location ? location: "No location" }</h1>
         </div>
 
-        <div className="min-h-[120px]">
+        <div className="">
           <p className=" mt-5">
           {description ? description: "No description" }
           </p>
