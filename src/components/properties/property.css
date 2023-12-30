@@ -1,0 +1,15 @@
+
+
+/* Set a specific height for the map container */
+.leaflet-container {
+    height: 70vh; /* Adjust the height as needed */
+    width: 100%;
+    border: black solid 5px;
+    justify-content: center;
+    margin: auto auto;
+}
+
+/* Optional: Customize the appearance of the marker popup */
+.leaflet-popup-content {
+    text-align: center;
+}

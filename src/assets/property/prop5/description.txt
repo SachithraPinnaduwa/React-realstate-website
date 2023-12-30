@@ -3,28 +3,7 @@ Southcrest Rise brings an exciting selection of new homes to historic Kenilworth
 
 Plot 71
 
-Tenure: Freehold
-Length of lease: N/A
-Annual ground rent amount (£): N/A
-Ground rent review period (year/month): N/A
-Annual service charge amount (£): 285.00
-Service charge review period (year/month): Yearly
-Council tax band (England, Wales and Scotland): TBC
-Reservation fee (£): 1000
-For more information about the optional extras available in our new homes, please visit the Miller Homes website.
-
-
-Plot 73
-
-Tenure: Freehold
-Length of lease: N/A
-Annual ground rent amount (£): N/A
-Ground rent review period (year/month): N/A
-Annual service charge amount (£): 285.00
-Service charge review period (year/month): Yearly
-Council tax band (England, Wales and Scotland): TBC
-Reservation fee (£): 1000
-For more information about the optional extras available in our new homes, please visit the Miller Homes website.
+<br>Tenure: Freehold <br>Length of lease: N/A <br>Annual ground rent amount (£): N/A <br>Ground rent review period (year/month): N/A <br>Annual service charge amount (£): 285.00 <br>Service charge review period (year/month): Yearly <br>Council tax band (England, Wales and Scotland): TBC <br>Reservation fee (£): 1000 <br>For more information about the optional extras available in our new homes, please visit the Miller Homes website. <br><br>Plot 73 <br>Tenure: Freehold <br>Length of lease: N/A <br>Annual ground rent amount (£): N/A <br>Ground rent review period (year/month): N/A <br>Annual service charge amount (£): 285.00 <br>Service charge review period (year/month): Yearly <br>Council tax band (England, Wales and Scotland): TBC <br>Reservation fee (£): 1000 <br>For more information about the optional extras available in our new homes, please visit the Miller Homes website.
 
 Parking - Double Garage
 

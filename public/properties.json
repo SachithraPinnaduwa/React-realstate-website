@@ -6,6 +6,7 @@
       "price": 750000,
       "tenure": "Freehold",
       "description": "A superb family home, presented in excellent condition and located in the sought-after area of Petts Wood.Opening to a welcoming entrance hallway, the property offers spacious and well laid out accommodation arranged over two floors which has had a single story, side, and rear extension.",
+      "longdes":"A superb family home, presented in excellent condition and located in the sought-after area of Petts Wood.Opening to a welcoming entrance hallway, the property offers spacious and well laid out accommodation arranged over two floors which has had a single story, side, and rear extension. The ground floor comprises of an opened planned reception room / dining room. At the rear of the property is the beautifully extended and recently finished kitchen, with integrated storage and access to the gardens.Upstairs are three bedrooms, two of which are generous double rooms with integrate storage. The master bedroom sits at the front of the property, with a bay window letting in an abundance of natural light and from the landing is a 3-piece bathroom finished in while tiles and exposed wood cabinets.Stunning landscaped garden with both decking area and lawn and edged with beautiful flower beds.The property is within easy reach of both Orpington (0.5miles) and Petts Wood Stations (0.4miles) with fast links into London and within the catchment for many desirable schools including Croft Infant School, St Olave's and Newstead Wood. Locksbottom and Petts Wood high streets are close by offering an array of amenities including shops, bars and restaurants.",
       "location": "Petts Wood Road, Petts Wood, Orpington",
       "picture":[
         "../src/assets/property/prop1/house.jpeg",
@@ -19,6 +20,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
       "date": "2022-10-12T00:00:00.000Z",
+      "lat": 51.390631492304024,
+        "lng": 0.0813754937212023,
       "added": {
         "month": "October",
         "day": 12,
@@ -32,6 +35,7 @@
       "price": 399995,
       "tenure": "Freehold",
       "description": "A STUNNING NEW BUILD PENTHOUSE APARTMENT BOASTING 1248 SQ. FT OF BEAUTIFULLY APPOINTED ACCOMODATION WITH AN ARRAY OF QUALITY LUXURY FITTINGS. PRIVATE LIFT ACCESS & TWO ALLOCATED PARKING SPACES. IDEALLY LOCATED FOR THE STATION AND TOWN CENTRE.",
+      "longdes":"A STUNNING NEW BUILD PENTHOUSE APARTMENT BOASTING 1248 SQ. FT OF BEAUTIFULLY APPOINTED ACCOMODATION WITH AN ARRAY OF QUALITY LUXURY FITTINGS. PRIVATE LIFT ACCESS & TWO ALLOCATED PARKING SPACES. IDEALLY LOCATED FOR THE STATION AND TOWN CENTRE.The property has been elegantly designed with contemporary flair and outstanding attention to detail. This unique penthouse apartment covers the whole of the top floor. Two allocated parking bays, landscaped communal outside space and cycle store for two bicycles each. Key Terms BT fibre connection, communal Sky dish, downlights throughout. polished chrome light switches and sockets, gas fired central heating system with combi-boiler, triple glazed sash timber windows, private lift access direct to penthouse entrance hall, spacious open planned living area & kitchen featuring two Cabrio skylight balcony systems, oversized skirting and coordinating architraves, bespoke Krieder fitted wardrobe to both bedrooms, en-suites to both bedrooms, washer/dryer to utility room, LVT luxury wood-effect vinyl flooring laid plank style kitchen, dining, living and hallway, carpet to bedrooms, 10-year Build Zone structural warranty & EWS1 certificate, audio entry system with mobile connection250 Year Lease & £250 Ground Rent per annum.Service charge will be charges annually and apportioned on a square foot basis. Initial calculations have predicted service charge to be approximately £1.94 per square foot.",
       "location": "Crofton Road Orpington BR6",
       "picture":[
         "../src/assets/property/prop2/flat.jpeg",
@@ -45,6 +49,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
       "date": "2022-09-14T00:00:00.000Z",
+      "lat": 51.3736355747483,
+      "lng": 0.07010937583628817,
       "added": {
         "month": "September",
         "day": 14,
@@ -58,6 +64,7 @@
       "price": 425000,
       "tenure": "Freehold",
       "description": "NO ONWARD CHAIN This spacious three bedroom detached property requires full refurbishment and resides on a generous plot with far reaching views to Bredon Hill and countryside views to the rear. The property is located in the popular village of Defford, Worcestershire.",
+      "longdes":"NO ONWARD CHAIN This spacious three bedroom detached property requires full refurbishment and resides on a generous plot with far reaching views to Bredon Hill and countryside views to the rear. The property is located in the popular village of Defford, Worcestershire. The accommodation comprises a spacious living room with vast patio doors enjoying views of the rear garden and countryside beyond, an open fireplace, and continues around the chimney structure to a hallway with an open staircase to the first floor, access to a dining room, a cloakroom with shower, an entrance hall and a dated but fitted kitchen, with access to the double garage and a boiler cupboard. To the first floor is a landing area, three bedrooms each with cupboard space and eve storage and a contemporary shower room with fitted units. To the front of the property is an extensive garden enjoying elevated views towards Bredon Hill with a driveway which leads to the double garden and front of the property. To the rear is an additional extensive garden with a patio area to the rear and side of the property, established bedding areas, a lawn area and fruit trees. The rear and side of the garden backs onto agricultural land. The property benefits from double glazing throughout, oil fired hot water and central heating and access to high speed broadband internet. The village of Defford boasts a public house, a primary school and village hall. The nearby town of Pershore and the riverside market town of Upton-upon-Severn provide a good range of amenities. The market town of Pershore is Georgian styled and provides high street shopping facilities and supermarket together with an indoor market and leisure complex. The river Avon runs to the east of the town lending itself to scenic walks and leisure pursuits. There are two medical centres and hospital and town library, together with excellent educational facilities within the area. Pershore has Number 8 which is run by voluntary help and provides theatre activities, a cinema, ballet and yoga classes and is very much a part of Pershore community living.Pershore train station or the newly constructed Worcestershire Parkway Station provides links directly to London Paddington or Worcester Shrub Hill travelling on to Birmingham. The motorway is approximately nine miles distant at Worcester junction 7 of the M5, bringing Birmingham to the north and Bristol to the south within commutable distance. Other main centres are Stratford-upon-Avon with the theatre and racecourse, Cheltenham with National Hunt horse racing and the Everyman Theatre and major main shopping facilities, Worcester with famous Cathedral and equally famous cricket club together with the River Severn and good shopping centre.",
       "location": "Upper Street, Defford, Worcestershire",
       "picture":[
         "../src/assets/property/prop3/detached.jpeg",
@@ -72,6 +79,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
       "date": "2023-12-10T00:00:00.000Z",
+      "lat": 52.08839514905624,
+        "lng": -2.1181080573503137,
       "added": {
         "month": "December",
         "day": 10,
@@ -85,6 +94,7 @@
       "price": 290000,
       "tenure": "Share of Freehold",
       "description": "This stunning 2 bedroom apartment is located on the first floor with Juliette balcony in an open plan Kitchen/Living Room area. This apartment is modern throughout and offers ample storage and sizeable bedrooms. Plus, investors, have no worry about modernising to meet upcoming EPC Regulations for rental properties.",
+      "longdes":"This stunning 2 bedroom apartment is located on the first floor with Juliette balcony in an open plan Kitchen/Living Room area. This apartment is modern throughout and offers ample storage and sizeable bedrooms. Plus, investors, have no worry about modernising to meet upcoming EPC Regulations for rental properties. Working from home or streaming videos will also be a breeze with high speed internet to each apartment**. Plus with two large open green spaces to explore, as well as the wider New Forest at it's door, nature really is at its door. Outside an allocated car park is provided to the residents car park, as well as a cycle store for residents use. The Potters Wood Sales Suite and Show Home are open 10am-5pm daily,with viewings by appointment only. Please call or email to book your 1-2-1 appointment today. Verwood is a vibrant town with the charm of a small village community. Bordering the beautiful New Forest, it is surrounded by woods and heath land and is within easy reach of the stunning sandy beaches on the south coast.",
       "location": "Potters Wood, Verwood, BH31 7BG",
       "picture":[
         "../src/assets/property/prop4/apartment.jpeg",
@@ -98,6 +108,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
       "date": "2022-10-03T00:00:00.000Z",
+      "lat": 50.88590207840537,
+      "lng": -1.8828301630678876,
       "added": {
         "month": "October",
         "day": 3,
@@ -111,6 +123,7 @@
       "price": 999950,
       "tenure": "Ask developer",
       "description": "Southcrest Rise brings an exciting selection of new homes to historic Kenilworth. Perfectly positioned on the eastern edge of the town, close to Kenilworth golf club and offering easy access to the A46. All homes will include electric vehicle charging points and selected plots will feature solar panels.",
+      "longdes":"<br>Tenure: Freehold <br>Length of lease: N/A Annual ground rent amount (£): N/A Ground rent review period (year/month): N/A Annual service charge amount (£): 285.00 Service charge review period (year/month): Yearly Council tax band (England, Wales and Scotland): TBC <br>Reservation fee (£): 1000 For more information about the optional extras available in our new homes, please visit the Miller Homes website. Plot 73 Tenure: Freehold Length of lease: N/A Annual ground rent amount (£): N/A Ground rent review period (year/month): N/A Annual service charge amount (£): 285.00 Service charge review period (year/month): Yearly Council tax band (England, Wales and Scotland): TBC Reservation fee (£): 1000 For more information about the optional extras available in our new homes, please visit the Miller Homes website.",
       "location": "Glasshouse Lane, Kenilworth, CV8 2DF",
       "picture":[
         "../src/assets/property/prop5/house.jpeg",
@@ -125,6 +138,9 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
         "date": "2023-10-26T00:00:00.000Z",
+
+      "lat": 52.341867167343814,
+        "lng": -1.5564745443585464,
       "added": {
         "month": "October",
         "day": 26,
@@ -138,6 +154,7 @@
       "price": 495000,
       "tenure": "Freehold",
       "description": "Just Property are delighted to bring to the market an imposing and substantial six bedroom Victorian semi-detached house which is arranged over three floors and is brimming with beautiful period features.",
+      "longdes":"Just Property are delighted to bring to the market an imposing and substantial six bedroom Victorian semi-detached house which is arranged over three floors and is brimming with beautiful period features. The property enjoys a stunning position in the heart of Bexhill’s picturesque Old Town and whilst the house does require updating there is huge potential for any new owner to create a magnificent home to suit their needs. With spacious and beautifully proportioned accommodation throughout this wonderful property also boasts a large bay fronted sitting room, dining room, breakfast room, kitchen, family bathroom/wc, cellar and an impressive entrance hall. In recent times the property has had a brand-new roof installed and has been re-wired. To the outside there a small front garden, a brick path leads past the front door giving access via a gate to an attractive and well screened rear garden with side access and an outside toilet. From this fabulous location you have cafes, a convenience store, Manor Barn Gardens and bus routes to Eastbourne and Hastings are within a brief stroll. The seafront and the many amenities of Bexhill town centre including mainline railway station are also within easy reach.This is a rare and exciting opportunity therefore viewing is highly recommended by Just Property the sole agents, please contact us for further information and to arrange access.",
       "location": "Belle Hill, Bexhill-on-Sea",
       "picture":[
         "../src/assets/property/prop6/house.jpeg",
@@ -151,6 +168,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
         "date": "2023-10-20T00:00:00.000Z",
+      "lat": 50.84661572835182,
+        "lng": 0.4700228978286509,
       "added": {
         "month": "October",
         "day": 20,
@@ -164,6 +183,7 @@
       "price": 800000,
       "tenure": "Freehold",
       "description": "A pair of spacious semi detached houses in addition to a substantial rear yard with detailed planning consent for the creation of 2 detached dormer bungalows.Once the development is complete both properties will enjoy a courtyard gardens. Currently there is off street parking at the front of the property.",
+      "longdes":"A pair of spacious semi detached houses in addition to a substantial rear yard with detailed planning consent for the creation of 2 detached dormer bungalows. Accommodation - A pair of traditional semi-detached properties offering spacious accommodation, fronting directly onto Malton Road with a substantial rear yard enjoying detailed planning consent for the creation of two detached dwellings. Holmleigh is a two bedroomed property which has been comprehensively upgraded in the recent past featuring a superb open plan dining kitchen at the rear of the house, forming part of a skilful extension.There are two separate downstairs reception rooms in addition to a utility room, and both first floor bedrooms boast ensuite bathrooms. Fieldhouse is a three bedroom property with downstairs bathroom which requires a programme of modernisation and upgrading. There is a large kitchen and utility room at the rear in addition to a through lounge. Once the development is complete both properties will enjoy a courtyard gardens. Currently there is off street parking at the front of the property.Planning - By Decision Number 22/00406/FUL planning consent has been granted for the erection of two detached dwellings, following the demolition of the existing outbuildings. A full set of electronic plans are available from the selling agent or through the City of York Council open access portal site.Sevices - Mains services of electricity and water are understood to be available to the site. Prospective purchases are advised to satisfy themselves that the appropriate connections can be made:",
       "location": "Malton Road, York",
       "picture":[
         "../src/assets/property/prop7/land.jpeg",
@@ -177,6 +197,8 @@
       ],
       "url": "../src/components/properties/Propertypage.jsx",
         "date": "2023-10-16T00:00:00.000Z",
+      "lat": 53.985156741305985,
+        "lng": -1.0610283449466877,
       "added": {
         "month": "October",
         "day": 16,

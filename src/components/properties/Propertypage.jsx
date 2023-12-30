@@ -4,12 +4,19 @@ import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import "./property.css";
+import osm from './osm-providers';
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer } from 'react-leaflet';
 
 export default function Propertypage({ handlePressChangeFavourites,pressed,setPressed }) {
   const { id } = useParams();
   const [property, setProperty] = useState("");
 
   const [activeTab, setActiveTab] = useState(1);
+
+  const [center, setCenter] = useState({ lat: 51.46644423118894, lng: -0.1950338273508966 });
+  const ZOOM_LEVEL = 15;
   const  images = [
     {
       url: "src/assets/apartment.jpg"
@@ -181,7 +188,7 @@ console.log(id? id: "No identity")
                           activeTab === 1 ? 'bg-gray-500' : ''
                       }`}
                   >
-                    Long Description
+                   Map
                   </button>
                   <button
                       onClick={() => handleTabClick(2)}
@@ -203,25 +210,32 @@ console.log(id? id: "No identity")
                           activeTab === 3 ? 'bg-gray-500' : ''
                       }`}
                   >
-                    Google Map
+                    Long Description
                   </button>
                 </div>
 
                 <div className="mt-6 relative  bg-purple-50">
                   <div
 
-                      className={`tab-panel p-6 transition duration-300 ${
+                      className={`tab-panel p-6 min-h-[70vh] transition duration-300 ${
                           activeTab === 1 ? '' : 'hidden'
                       }`}
                   >
+                    <MapContainer
+                        center={{lat: property.lat, lng: property.lng }}
+                        zoom={ZOOM_LEVEL}
 
-                    <p className="mt-4 text-gray-600">
-                      {property.description || "No description"}
-                    </p>
+                    >
+                      <TileLayer
+                          url={osm.maptiler.url}
+                          attribution={osm.maptiler.attribution}
+                      />
+                    </MapContainer>
+
                   </div>
                   <div
 
-                      className={`tab-panel p-6 transition duration-300 ${
+                      className={`tab-panel p-6 min-h-[70vh]  transition duration-300 ${
                           activeTab === 2 ? '' : 'hidden'
                       }`}
                   >
@@ -237,13 +251,15 @@ console.log(id? id: "No identity")
                   </div>
                   <div
 
-                      className={`tab-panel p-6 transition duration-300 ${
+                      className={`tab-panel p-6 min-h-[70vh] transition duration-300 ${
                           activeTab === 3 ? '' : 'hidden'
                       }`}
                   >
 
+
+
                     <p className="mt-4 text-gray-600">
-                      Google Map
+                      {property.longdes || "No description"}
                     </p>
                   </div>
 
