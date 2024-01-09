@@ -39,7 +39,7 @@ export default function Propertypage({ handlePressChangeFavourites,pressed,setPr
     {
       url: "../src/assets/property/prop1/house7.jpeg"
     },];
-
+//this is used to change the image when the left or right arrow is clicked
   const  [currentImage, setCurrentImage] = useState(0)
   const prevImage = () => {
     const  isFirstImage = currentImage === 0
@@ -73,6 +73,7 @@ export default function Propertypage({ handlePressChangeFavourites,pressed,setPr
     fetchData();
   }, [id]);
 
+  //this is used to change the heart icon when it is clicked
   const buttonClickAction = () => {
     setPressed(!pressed);
     handlePressChangeFavourites(property.id);
@@ -215,6 +216,7 @@ console.log(id? id: "No identity")
                 </div>
 
                 <div className="mt-6 relative  bg-purple-50">
+                  {/* this is used to show the map */}
                   <div
 
                       className={`tab-panel p-6 min-h-[70vh] transition duration-300 ${
@@ -241,12 +243,13 @@ console.log(id? id: "No identity")
                   >
 
                     <div className="lg:visible   sm:block ">
+                      {/* this is used to show the floor map */}
                       {property.picture  ? (
                           <img src={property.picture[7]} alt="Property Plan" className="w-[410px] mx-auto"/>
                       ) : (
                           <p>No picture</p>
                       )}
-                      {/* Additional property details can be added here */}
+                      
                     </div>
                   </div>
                   <div

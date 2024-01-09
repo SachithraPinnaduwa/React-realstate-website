@@ -1,14 +1,21 @@
-import React,{useState,useRef} from 'react'
+import React, { useState, useRef } from "react";
 
-export default function SearchResult({result,selected,setSelected ,handleSelect ,handle}) {
-    const handleClick = () => {
-        handleSelect(!handle)
-        setSelected(result);
-      
-      };
-     
-      
+export default function SearchResult({
+  result,
+  selected,
+  setSelected,
+  handleSelect,
+  handle,
+}) {
+  // this is an individual result component
+  const handleClick = () => {
+    handleSelect(!handle);
+    setSelected(result);
+  };
+
   return (
-    <div className='py-2 px-4 hover:bg-gray-300' onClick={handleClick}>{result.location}</div>
-  )
+    <div className="py-2 px-4 hover:bg-gray-300" onClick={handleClick}>
+      {result.location}
+    </div>
+  );
 }
