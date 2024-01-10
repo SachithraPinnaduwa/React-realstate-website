@@ -26,6 +26,8 @@ export default function Favouritespage({
         handlePressChangeFavourites={handlePressChangeFavourites}
         pressed={pressed}
         setPressed={setPressed}
+        favouriteProperties={favouriteProperties}
+        setFavouriteProperties={setFavouriteProperties}
       />
     </div>
   );

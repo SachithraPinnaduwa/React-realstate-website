@@ -48,16 +48,12 @@ function App() {
   };
 
   const handlePressChangeFavourites = (propertyId) => {
-    // Toggle the pressed state for the property with the given ID
-    setFavouriteProperties((prevProperties) =>
-      prevProperties.map((prop) =>
-        prop.id === propertyId ? { ...prop, pressed: !prop.pressed } : prop
-      )
-    );
+
     setIds((prevIds) => ({ ...prevIds, [propertyId]: !prevIds[propertyId] }));
+
   };
 
-  console.log(ids);
+
   const filteredProperties = property.filter((prop) => {
     return ids[prop.id];
   });

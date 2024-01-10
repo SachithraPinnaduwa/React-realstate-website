@@ -8,7 +8,10 @@ export default function PropertyList({
   setPressed,
   ids,
   setIds,
+ favouriteProperties,
+ setFavouriteProperties,
 }) {
+
   // this is the component that is used to map through the properties and display them
   return (
     <div className="text-black">
@@ -21,6 +24,8 @@ export default function PropertyList({
           setPressed={setPressed}
           ids={ids}
           setIds={setIds}
+            favouriteProperties={favouriteProperties}
+            setFavouriteProperties={setFavouriteProperties}
         />
       ))}
     </div>

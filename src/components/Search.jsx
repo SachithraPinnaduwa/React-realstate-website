@@ -80,6 +80,8 @@ export default function Search({
           setPressed={setPressed}
           ids={ids}
           setIds={setIds}
+          favouriteProperties={favouriteProperties}
+          setFavouriteProperties={setFavouriteProperties}
         />
       </div>
     </div>

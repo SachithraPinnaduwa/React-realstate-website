@@ -22,15 +22,18 @@ export default function Property({
   setPressed,
   ids,
   setIds,
+    favouriteProperties,
+    setFavouriteProperties,
 }) {
-//this is the state that is used to change the heart icon when it is clicked
-  const [changehart, setChangehart] = useState(false);
 
   const handlePress = () => {
+    console.log(ids)
+
     setPressed(!pressed);
-    setChangehart(!changehart);
+
     // Call the handlePressChange function from the parent component
     handlePressChangeFavourites(id);
+
   };
 
   return (
@@ -67,7 +70,7 @@ export default function Property({
             </Link>
 {/* this is the favourites button */}
             <button onClick={handlePress}>
-              {!changehart ? (
+              {ids && !Object.keys(ids).includes(id.toString())   ? (
                 <CiHeart
                   size={30}
                   className="text-teal-500 font-extrabold mr-20 ml-10 hover:cursor-pointer hover:text-teal-600 "
