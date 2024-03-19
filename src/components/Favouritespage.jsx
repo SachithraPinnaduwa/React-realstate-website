@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useAppContext } from "../context/AppContext";
 
 import PropertyList from "./properties/PropertyList";
 
-export default function Favouritespage({
-  property,
-  setProperty,
-  ids,
-  setIds,
-  handlePressChangeFavourites,
-  pressed,
-  setPressed,
-  favouriteProperties,
-  setFavouriteProperties,
-  filteredProperties,
-}) {// this the page that shows the favourite properties
+export default function Favouritespage() {// this the page that shows the favourite properties
+
+
+                
+  const { property, setProperty, ids, setIds, filteredProperties, handlePressChangeFavourites,properties,
+    favouriteProperties,setFavouriteProperties,setPressed,pressed } = useAppContext();
+
+    
   return (
     <div className="bg-[url('./assets/apartmentb.jpg')] bg-cover min-h-screen">
       <h1 className="text-6xl font-bold text-center py-8 text-emerald-500 ">
@@ -21,14 +18,15 @@ export default function Favouritespage({
         {/* this chsnges based on whether properties exist or not */}
       </h1>
 
-      <PropertyList
-        properties={filteredProperties}
-        handlePressChangeFavourites={handlePressChangeFavourites}
-        pressed={pressed}
-        setPressed={setPressed}
-        favouriteProperties={favouriteProperties}
-        setFavouriteProperties={setFavouriteProperties}
-      />
+ {favouriteProperties.map((property) => (
+        <PropertyList
+          key={property.id}
+          properties={[property]}
+          ids={ids}
+          setIds={setIds}
+        />
+      ))}
+      
     </div>
   );
 }

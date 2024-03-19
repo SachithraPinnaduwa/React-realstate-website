@@ -1,17 +1,15 @@
 import React from "react";
 import Property from "./Property";
+import { useAppContext } from "../../context/AppContext";
 
 export default function PropertyList({
   properties,
-  handlePressChangeFavourites,
-  pressed,
-  setPressed,
+
   ids,
   setIds,
- favouriteProperties,
- setFavouriteProperties,
+ 
 }) {
-
+const {setFavouriteProperties, favouriteProperties} = useAppContext();
   // this is the component that is used to map through the properties and display them
   return (
     <div className="text-black">
@@ -19,9 +17,7 @@ export default function PropertyList({
         <Property
           key={property.id}
           {...property}
-          handlePressChangeFavourites={handlePressChangeFavourites}
-          pressed={pressed}
-          setPressed={setPressed}
+         
           ids={ids}
           setIds={setIds}
             favouriteProperties={favouriteProperties}

@@ -8,8 +8,12 @@ import "./property.css";
 import osm from './osm-providers';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from 'react-leaflet';
+import { useAppContext } from "../../context/AppContext";
 
-export default function Propertypage({ handlePressChangeFavourites,pressed,setPressed }) {
+export default function Propertypage() {
+
+
+  const {handlePressChangeFavourites,pressed,setPressed} = useAppContext();
   const { id } = useParams();
   const [property, setProperty] = useState("");
 

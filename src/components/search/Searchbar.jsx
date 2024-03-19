@@ -1,37 +1,53 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef ,useEffect} from "react";
 import SearchResultsList from "./SearchResultsList";
 import { Link } from "react-router-dom";
 import PropertyList from "../properties/PropertyList";
+import { useAppContext } from "../../context/AppContext";
+import { set } from "react-hook-form";
 
-export default function Searchbar({
-  setResults,
-  results,
-  fetchDat,
-  properties,
-  setProperties,
-  handleChildValue,
-  childValue,
-}) {
+export default function Searchbar() {
+  const {results, setResults, childValue, setChildValue, properties, setProperties,fetchDat,handleChildValue} = useAppContext();
+
   // this component is the search bar that is shown on the home page
   const [input, setInput] = useState("");
   const [selected, setSelected] = useState("");
   const [handle, handleSelect] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const searchBarRef = useRef(null);
+
+
+  useEffect(() => {
+    // Function to check if the click is outside the search bar
+    function handleClickOutside(event) {
+      if (searchBarRef.current && !searchBarRef.current.contains(event.target)) {
+       
+        setResults([]); // Set the filtered properties
+      }
+    }
+    // Add event listener for clicks
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Remove event listener when the component is unmounted
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [searchBarRef]);
 
   const fetchData = (value) => {
     fetch("../../public/properties.json")
       .then((response) => response.json())
       .then((json) => {
-        const results = json.filter((property) => {
+        const filteredProperties = json.filter((property) => {
           return (
             property &&
             property.location &&
-            property.location.toLowerCase().includes(value)
+            property.location.toLowerCase().includes(value.toLowerCase())
           );
         });
-        setResults(results);
+        setProperties(filteredProperties); // Set the filtered properties
+        setResults(filteredProperties); // Set the filtered properties
       });
   };
+  
 
   const handleChange = (value) => {
     setInput(value);
@@ -52,7 +68,7 @@ export default function Searchbar({
   };
 
   return (
-    <div className="py-6 bg-cyan-900 lg:min-w-[1000px] sm:min-w-0 mx-auto px-[10%] max-h-[250px] md:min-h-[250px] sm:min-h-0">
+    <div  ref={searchBarRef} className="py-6 bg-cyan-900 lg:min-w-[1000px] sm:min-w-0 mx-auto px-[10%] max-h-[250px] md:min-h-[250px] sm:min-h-0">
       <h1 className="text-3xl font-bold text-emerald-500 text-center">
         Believe in finding it
       </h1>
@@ -73,7 +89,7 @@ export default function Searchbar({
             className="bg-gray-200 px-4 py-2 rounded-md w-full text-black"
           />
           <SearchResultsList
-            className=""
+            
             results={results}
             selected={selected}
             setSelected={setSelected}

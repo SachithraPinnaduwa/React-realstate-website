@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Searchbar from "./Searchbar";
+import { useAppContext } from "../../context/AppContext";
 
 import PropertyList from "../properties/PropertyList";
-export default function Maincontent({
-  results,
-  setResults,
-  fetchDat,
-  handleChildValue,
-  properties,
-  setProperties,
-  handlePressChangeFavourites,
-  childValue,
-  favouriteProperties,
-  setFavouriteProperties,
-  pressed,
-  setPressed,
-  ids,
-  setIds,
-}) {
+export default function Maincontent() {
+  const {
+    results,
+    setResults,
+    childValue,
+    setChildValue,
+    properties,
+    setProperties,
+    favouriteProperties,
+    setFavouriteProperties,
+    ids,
+    setIds,
+    pressed,
+    setPressed,
+    fetchDat,
+    handlePressChangeFavourites,
+    handleChildValue,
+  } = useAppContext();
   // this is the state that is used to filter the properties based on the location
   const p = properties.filter((property) => {
     return (
@@ -46,14 +49,8 @@ export default function Maincontent({
         <PropertyList
           key={filteredProperty.id}
           properties={[filteredProperty]}
-          childValue={childValue}
-          handlePressChangeFavourites={handlePressChangeFavourites}
-          pressed={pressed}
-          setPressed={setPressed}
           ids={ids}
           setIds={setIds}
-          favouriteProperties={favouriteProperties}
-        setFavouriteProperties={setFavouriteProperties}
         />
       ))}
     </div>

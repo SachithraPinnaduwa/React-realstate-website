@@ -1,25 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import SearchForm from "./SearchForm";
+import { useAppContext } from "../context/AppContext";
 
 import PropertyList from "./properties/PropertyList";
 
-export default function Search({
-  fetchDat,
-  handlePressChangeFavourites,
-  filteredProperties,
-  setProperty,
-  properties,
-  setProperties,
-  favouriteProperties,
-  setFavouriteProperties,
-  ids,
-  setIds,
-  childValue,
-  formData,
-  setFormData,
-  pressed,
-  setPressed,
-}) {
+export default function Search() {
+
+ 
+  const { fetchDat, handlePressChangeFavourites,filteredProperties,setProperty, properties,favouriteProperties, setFavouriteProperties,
+  ids,setIds,childValue,formData,setFormData,pressed,setPressed,setProperties} = useAppContext();
+
   // this is the state that is used to filter the properties based on the location
   const p = properties.filter((property) => {
     return (

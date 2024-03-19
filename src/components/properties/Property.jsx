@@ -5,6 +5,7 @@ import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAppContext } from "../../context/AppContext";
 //this is the property component that is shown on all pages that have a property list
 export default function Property({
   id,
@@ -17,24 +18,38 @@ export default function Property({
   picture,
   url,
   added,
-  handlePressChangeFavourites,
-  pressed,
-  setPressed,
+  
+ 
   ids,
   setIds,
-    favouriteProperties,
-    setFavouriteProperties,
+   
 }) {
+const {handlePressChangeFavourites,pressed,setPressed,setFavouriteProperties} = useAppContext();
+ 
 
-  const handlePress = () => {
-    console.log(ids)
+const handlePress = () => {
+  setIds((prevIds) => {
+    const newIds = { ...prevIds };
+    if (newIds[id]) {
+      // If the ID exists, remove it from the object
+      delete newIds[id];
+      // Also remove the property from the favourites
+      setFavouriteProperties((prevFavourites) =>
+        prevFavourites.filter((property) => property.id !== id)
+      );
+    } else {
+      // If the ID doesn't exist, add it to the object
+      newIds[id] = true;
+      // Also add the property to the favourites
+      setFavouriteProperties((prevFavourites) => [
+        ...prevFavourites,
+        { id, type, bedrooms, price, tenure, description, location, picture, url, added },
+      ]);
+    }
+    return newIds;
+  });
+};
 
-    setPressed(!pressed);
-
-    // Call the handlePressChange function from the parent component
-    handlePressChangeFavourites(id);
-
-  };
 
   return (
     <div className="grid md:grid-flow-col border-8 border-teal-500 sm:grid-flow-row bg-slate-100 m-5 rounded-xl">
@@ -68,6 +83,8 @@ export default function Property({
                 Visit
               </button>
             </Link>
+
+
 {/* this is the favourites button */}
             <button onClick={handlePress}>
               {ids && !Object.keys(ids).includes(id.toString())   ? (
