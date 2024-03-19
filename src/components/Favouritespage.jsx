@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 
 import PropertyList from "./properties/PropertyList";
+import EmptyFavorites from "../EmptyFavourites";
 
 export default function Favouritespage() {// this the page that shows the favourite properties
 
@@ -17,15 +18,27 @@ export default function Favouritespage() {// this the page that shows the favour
         Your Favourites {filteredProperties.length === 0 ? "are empty" : ""}
         {/* this chsnges based on whether properties exist or not */}
       </h1>
+{filteredProperties.length === 0 ? (
+  <EmptyFavorites />
+): (
+  favouriteProperties.map((property) => (
+    <PropertyList
+      key={property.id}
+      properties={[property]}
+      ids={ids}
+      setIds={setIds}
+    />
+  ))
+)}
 
- {favouriteProperties.map((property) => (
+ {/* {favouriteProperties.map((property) => (
         <PropertyList
           key={property.id}
           properties={[property]}
           ids={ids}
           setIds={setIds}
         />
-      ))}
+      ))} */}
       
     </div>
   );

@@ -6,9 +6,9 @@ import PropertyList from "./properties/PropertyList";
 
 export default function Search() {
 
- 
-  const { fetchDat, handlePressChangeFavourites,filteredProperties,setProperty, properties,favouriteProperties, setFavouriteProperties,
-  ids,setIds,childValue,formData,setFormData,pressed,setPressed,setProperties} = useAppContext();
+
+  const { fetchDat, handlePressChangeFavourites, filteredProperties, setProperty, properties, favouriteProperties, setFavouriteProperties,
+    ids, setIds, childValue, formData, setFormData, pressed, setPressed, setProperties } = useAppContext();
 
   // this is the state that is used to filter the properties based on the location
   const p = properties.filter((property) => {
@@ -45,13 +45,13 @@ export default function Search() {
   return (
     <div className=" bg-[url('./assets/apartmentb.jpg')]  bg-cover  ">
       <div className="mx-auto text-center flex flex-col  ">
-        <div className="md:max-w-[800px] mx-auto md:h-screen sm:h-auto">
+        <div className="md:max-w-[800px] mx-auto md:h-screen sm:h-auto ">
           <div className="">
             <h1 className="text-6xl font-bold text-emerald-500 my-10">
               Property for sale in &apos;
               {childValue ? childValue : "Everywhere"}&apos;
             </h1>
-            <div className="m-5  mx-auto  rounded-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)]">
+            <div className="mt-[10vh]  mx-auto  rounded-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)]">
               <SearchForm
                 properties={properties}
                 fetchDat={fetchDat}
@@ -62,17 +62,20 @@ export default function Search() {
           </div>
         </div>
 
-        <PropertyList
-          properties={filtered}
-          setProperties={setProperties}
-          handlePressChangeFavourites={handlePressChangeFavourites}
-          pressed={pressed}
-          setPressed={setPressed}
-          ids={ids}
-          setIds={setIds}
-          favouriteProperties={favouriteProperties}
-          setFavouriteProperties={setFavouriteProperties}
-        />
+
+        
+          <PropertyList
+            properties={filtered}
+            setProperties={setProperties}
+            handlePressChangeFavourites={handlePressChangeFavourites}
+            pressed={pressed}
+            setPressed={setPressed}
+            ids={ids}
+            setIds={setIds}
+            favouriteProperties={favouriteProperties}
+            setFavouriteProperties={setFavouriteProperties}
+          />
+        
       </div>
     </div>
   );
